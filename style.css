@@ -1,0 +1,128 @@
+@charset "utf-8";
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+body {
+    font-family: 'NanumSquare', sans-serif;
+    font-weight: 900;
+}
+/* Table 공통 css */
+table.item {
+    width: 100%;
+    text-align: center;
+}
+table.item tr {
+    height: 41px;
+}
+table.item thead tr {
+    color: #007963;
+}
+table.item thead tr th:first-child {
+    border-radius: 16px 0 0 0;
+}
+table.item thead tr th:nth-child(2) {
+    border: 5px solid #ffffff;
+    border-top: none;
+    border-bottom: none;
+}
+table.item thead tr th:last-child {
+    border-radius: 0 16px 0 0;
+}
+table.item tbody {
+    font-size: 20px;
+    background-color: #ffffff;
+}
+table.item tbody tr:nth-child(2n) {
+    background-color: #ebf3e4;
+}
+table.item tbody tr:last-child td:first-child {
+    border-radius: 0 0 0 16px;
+}
+table.item tbody tr:last-child td:last-child {
+    border-radius: 0 0 16px 0;
+}
+/* Table 공통 css 끝 */
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 95px;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+header .logo {
+    width: 155px;
+    height: 31px;
+}
+.container {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+    gap: 20px;
+}
+.container .btnWrap {
+    display: flex;
+    justify-content: flex-end;
+}
+.container .btnWrap button {
+    width: 168px;
+    height: 55px;
+    background-image: url('https://image.s13.sfmc-content.com/lib/fe26117473640478721278/m/1/8e723aea-cef8-4343-a0d3-6f58834c0c2a.png');
+}
+.container .contents {
+    max-width: 100%;
+    min-height: 1720px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ebf3e4;
+}
+.container .contents .state {
+    width: 100%;
+    padding: 0 95px;
+}
+.container .contents .state .date {
+    padding: 22px 0 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #007963;
+    font-size: 18px;
+}
+.container .contents .state .date span {
+    color: #3c3c3c;
+}
+.container .contents .state table.item tbody tr td.remittance {
+    text-align: right;
+    padding-right: 27px;
+}
+.container .contents .state .sumArea {
+    padding-top: 52px;
+    display: flex;
+    justify-content: right;
+    /* height: 25px; */
+}
+.container .contents .state .sumArea .sum {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 450px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #007963;
+    color: #007963;
+    font-size: 16px;
+}
+.container .contents .state .sumArea .sum .price {
+    color: #3c3c3c;
+}
+
+/* 후원 내역 */
+.container .contents .list .items {
+    width: 50%;
+}
