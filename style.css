@@ -126,3 +126,9 @@ header .logo {
 .container .contents .list .items {
     width: 50%;
 }
+
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 80%;
+    }
+}
