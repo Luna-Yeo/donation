@@ -61,11 +61,16 @@ body {
     font-size: 18px;
     border: 1px solid #dfdfdf;
 }
-.container .contents .item .inputBox button {
+.container .contents .item .inputBox form {
+    display: flex;
+    align-content: center;
+    justify-content: center;
     width: 123px;
     height: 100%;
     background-color: #00735c;
     border-radius: 7px;
+}
+.container .contents .item .inputBox form button {
     color: #fff;
     font-size: 20px;
 }
@@ -96,8 +101,10 @@ body {
         flex-grow: 1;
         font-size: 14px;
     }
-    .container .contents .item .inputBox button {
+    .container .contents .item .inputBox form {
         width: 21.97%;
+    }
+    .container .contents .item .inputBox form button {
         font-size: 3.6842vw;
     }
 }
