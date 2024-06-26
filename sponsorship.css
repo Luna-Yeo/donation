@@ -1,25 +1,43 @@
 @charset "utf-8";
 @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
 
-.container {
-    max-width: 1200px;
-    /* width: 90%; */
-    display: flex;
-    flex-direction: column;
-    padding: 50px 0;
-    gap: 20px;
+/* Table 공통 css */
+table.item {
+    width: 100%;
+    text-align: center;
 }
-.container .btnWrap {
-    display: flex;
-    justify-content: flex-end;
+table.item thead tr th {
+    color: #007963;
+    font-size: 18px;
+    font-family: 'NanumSquare', sans-serif !important;
+    font-weight: 900;
 }
-.container .btnWrap button {
-    width: 168px;
-    height: 55px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-image: url('https://image.s13.sfmc-content.com/lib/fe26117473640478721278/m/1/8e723aea-cef8-4343-a0d3-6f58834c0c2a.png');
+table.item thead tr th:first-child {
+    border-radius: 16px 0 0 0;
 }
+table.item thead tr th:nth-child(2),
+table.item tbody tr td:nth-child(2) {
+    border: 5px solid #ffffff;
+    border-top: none;
+    border-bottom: none;
+}
+table.item thead tr th:last-child {
+    border-radius: 0 16px 0 0;
+}
+table.item tbody {
+    background-color: #ffffff;
+}
+table.item tbody tr:nth-child(2n) {
+    background-color: #ebf3e4;
+}
+table.item tbody tr:last-child td:first-child {
+    border-radius: 0 0 0 16px;
+}
+table.item tbody tr:last-child td:last-child {
+    border-radius: 0 0 16px 0;
+}
+/* Table 공통 css 끝 */
+
 .container .contents {
     max-width: 100%;
     min-height: 1720px;
@@ -155,6 +173,24 @@
 }
 
 @media only screen and (max-width: 1200px) {
+    table.item thead tr th:first-child {
+        border-radius: 1.4545vw 0 0 0;
+    }
+    table.item thead tr th:last-child {
+        border-radius: 0 1.4545vw 0 0;
+    }
+    table.item tbody tr:last-child td:first-child {
+        border-radius: 0 0 0 1.4545vw;
+    }
+    table.item tbody tr:last-child td:last-child {
+        border-radius: 0 0 1.4545vw 0;
+    }
+    table.item thead tr th:nth-child(2),
+    table.item tbody tr td:nth-child(2) {
+        border: 3px solid #ffffff;
+        border-top: none;
+        border-bottom: none;
+    }
     .container .contents {
         min-height: auto;
     }
@@ -209,4 +245,6 @@
         height: 2.9091vw;
         font-size: 1.2727vw;
     }
+}
+@media only screen and (max-width: 760px) {
 }

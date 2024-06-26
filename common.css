@@ -4,43 +4,9 @@ body {
     color: #3c3c3c !important;
     letter-spacing: -0.32px;
 }
-
-/* Table 공통 css */
-table.item {
-    width: 100%;
-    text-align: center;
+br.break {
+    display: none;
 }
-table.item thead tr th {
-    color: #007963;
-    font-size: 18px;
-    font-family: 'NanumSquare', sans-serif !important;
-    font-weight: 900;
-}
-table.item thead tr th:first-child {
-    border-radius: 16px 0 0 0;
-}
-table.item thead tr th:nth-child(2),
-table.item tbody tr td:nth-child(2) {
-    border: 5px solid #ffffff;
-    border-top: none;
-    border-bottom: none;
-}
-table.item thead tr th:last-child {
-    border-radius: 0 16px 0 0;
-}
-table.item tbody {
-    background-color: #ffffff;
-}
-table.item tbody tr:nth-child(2n) {
-    background-color: #ebf3e4;
-}
-table.item tbody tr:last-child td:first-child {
-    border-radius: 0 0 0 16px;
-}
-table.item tbody tr:last-child td:last-child {
-    border-radius: 0 0 16px 0;
-}
-/* Table 공통 css 끝 */
 
 .wrap {
     display: flex;
@@ -61,23 +27,31 @@ header .logo {
     width: 155px;
     height: 31px;
 }
-br.break {
-    display: none;
+
+.container {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+    gap: 20px;
+}
+.container .btnWrap {
+    display: flex;
+    justify-content: flex-end;
+}
+.container .btnWrap button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 168px;
+    height: 55px;
+    border-radius: 7px;
+    background-color: #007963;
+    font-size: 22px;
+    color: #fff;
 }
 
 @media only screen and (max-width: 1200px) {
-    table.item thead tr th:first-child {
-        border-radius: 1.4545vw 0 0 0;
-    }
-    table.item thead tr th:last-child {
-        border-radius: 0 1.4545vw 0 0;
-    }
-    table.item tbody tr:last-child td:first-child {
-        border-radius: 0 0 0 1.4545vw;
-    }
-    table.item tbody tr:last-child td:last-child {
-        border-radius: 0 0 1.4545vw 0;
-    }
     header {
         padding: 0 35px;
     }
@@ -86,19 +60,19 @@ br.break {
     }
 }
 @media only screen and (max-width: 760px) {
+    br.break {
+        display: inline;
+    }
     header {
         padding: 0 30px;
     }
     .container {
         padding: 30px;
     }
-    table.item thead tr th:nth-child(2),
-    table.item tbody tr td:nth-child(2) {
-        border: 3px solid #ffffff;
-        border-top: none;
-        border-bottom: none;
-    }
-    br.break {
-        display: inline;
+
+    .container .btnWrap button {
+        width: 25.7895vw;
+        height: 10.5263vw;
+        font-size: 3.6842vw;
     }
 }
