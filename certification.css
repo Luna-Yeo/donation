@@ -1,0 +1,103 @@
+@charset "utf-8";
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+body {
+    font-family: 'Noto Sans KR', sans-serif !important;
+}
+.container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .contents {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 267px;
+    gap: 50px;
+}
+.container .contents .title {
+    font-size: 42px;
+    font-weight: 600;
+    color: #00735c;
+    text-align: center;
+}
+.container .contents .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 33px;
+    width: 100%;
+    padding: 70px;
+    background-color: #f8f8f8;
+    border-radius: 7px;
+}
+.container .contents .item .txt {
+    text-align: center;
+    font-size: 22px;
+    color: #222222;
+    line-height: 1.4545;
+}
+.container .contents .item .txt span {
+    color: #00735c;
+}
+.container .contents .item .inputBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    gap: 7px;
+}
+.container .contents .item .inputBox input {
+    max-width: 370px;
+    width: 370px;
+    height: 100%;
+    padding: 0px 14px;
+    font-size: 18px;
+    border: 1px solid #dfdfdf;
+}
+.container .contents .item .inputBox button {
+    width: 123px;
+    height: 100%;
+    background-color: #00735c;
+    border-radius: 7px;
+    color: #fff;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .container .contents {
+        padding: 11.9167vw 0;
+    }
+}
+@media only screen and (max-width: 760px) {
+    .container .contents {
+        padding: 36.18% 0;
+    }
+    .container .contents .title {
+        font-size: 6.3158vw;
+    }
+    .container .contents .item {
+        padding: 40px;
+    }
+    .container .contents .item .txt {
+        font-size: 3.5526vw;
+    }
+    .container .contents .item .inputBox {
+        gap: 10px;
+    }
+    .container .contents .item .inputBox input {
+        width: 58.29%;
+        flex-grow: 1;
+        font-size: 14px;
+    }
+    .container .contents .item .inputBox button {
+        width: 21.97%;
+        font-size: 3.6842vw;
+    }
+}
