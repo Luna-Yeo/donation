@@ -37,12 +37,7 @@ table.item tbody tr:last-child td:last-child {
     border-radius: 0 0 16px 0;
 }
 /* Table 공통 css 끝 */
-
 .container .contents {
-    max-width: 100%;
-    min-height: 1720px;
-    display: flex;
-    flex-direction: column;
     border: 1px solid #ebf3e4;
 }
 .container .contents .state {

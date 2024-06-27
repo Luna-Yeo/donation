@@ -1,0 +1,193 @@
+@charset "utf-8";
+
+.bd-bottom {
+    border-bottom: 1px solid #000;
+}
+.bd-top {
+    border-top: 1px solid #000;
+}
+.bd-right {
+    border-right: 1px solid #000;
+}
+.bd-left {
+    border-left: 1px solid #000;
+}
+table {
+    width: 100%;
+    font-size: 20px;
+}
+table th {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 165px;
+    width: 165px;
+    min-height: 50px;
+    height: 50px;
+    text-align: center;
+    border-right: 1px solid #000;
+    font-weight: normal;
+}
+table tr {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+table tr td.text {
+    flex-grow: 1;
+    padding: 0 14px;
+}
+table tr td.col {
+    width: 50%;
+}
+
+/*contents*/
+.container .contents {
+    border: 2px solid #000;
+}
+
+.head {
+    position: relative;
+    width: 100%;
+    height: 61px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url('https://image.s13.sfmc-content.com/lib/fe26117473640478721278/m/1/14fa24c9-316a-4836-b55a-5ee6aff19280.png');
+}
+.head .serialNumber {
+    position: absolute;
+    top: 21px;
+    left: 142px;
+    font-size: 18px;
+}
+.container .contents section {
+    padding-bottom: 8px;
+}
+caption {
+    border-bottom: 1px solid #000;
+}
+.container .contents section.contributor caption {
+    border-top: 2px solid #000;
+}
+/* 서명 영역 */
+.container .contents section.sign {
+    position: relative;
+}
+.container .contents section.sign caption {
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+.container .contents section.sign .period {
+    position: absolute;
+    top: 8px;
+    left: 98px;
+    font-size: 20px;
+}
+.container .contents section.sign .date {
+    position: absolute;
+    top: 66px;
+    left: 159px;
+    display: flex;
+    align-items: center;
+    gap: 86px;
+    font-size: 24px;
+}
+.container .contents section.sign .date .signature {
+    padding-left: 250px;
+}
+.container .contents section.type {
+    padding: 0;
+}
+.container .contents section.type caption {
+    border: none;
+}
+table tbody tr th {
+    width: 165px;
+    height: 100%;
+    border-right: 1px solid #000;
+}
+/* 기부 내용 영역 */
+.list table thead > tr,
+.list table tbody > tr {
+    gap: 4px;
+}
+.list table thead tr td,
+.list table tbody tr td {
+    width: 596px;
+}
+.list table thead tr > td:first-child {
+    border-right: 2px solid #000;
+}
+.list table thead tr > td:last-child {
+    border-left: 2px solid #000;
+}
+.list table thead tr th {
+    width: 25%;
+}
+.list table thead tr > td th:last-child {
+    border-right: none;
+}
+.test .block {
+    display: flex;
+}
+.test .block table {
+    width: 50%;
+}
+.test .block table thead tr th {
+    width: 25%;
+}
+.infor {
+    font-size: 20px;
+    text-align: center;
+}
+.space {
+    width: 60px;
+}
+@media only screen and (max-width: 1200px) {
+    .head {
+        height: 5.08vw;
+    }
+    .head .serialNumber {
+        left: 11.83%;
+        top: 27%;
+        font-size: 1.5vw;
+    }
+    table {
+        font-size: 1.6667vw;
+    }
+    table tbody tr th {
+        width: 13.75vw;
+        height: 4.1667vw;
+        min-height: auto;
+    }
+    .space {
+        width: 5vw;
+    }
+    table tr td.col table tr th.merge {
+        height: 8.3334vw;
+    }
+    .font-small {
+        font-size: 1.4vw;
+        line-height: 1.2;
+    }
+    .container .contents section.sign .date {
+        top: 4.9vw;
+        left: 11.25vw;
+        font-size: 1.7vw;
+        gap: 6.5vw;
+    }
+    .container .contents section.sign .date .signature {
+        padding-left: 20vw;
+    }
+    .container .contents section.sign .period {
+        top: 0.5vw;
+        left: 7.5vw;
+        font-size: 1.5vw;
+    }
+}
+@media only screen and (max-width: 760px) {
+    .container .contents section.sign .date {
+        left: 10.25vw;
+    }
+}
