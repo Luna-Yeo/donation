@@ -41,6 +41,9 @@ table tr td.text {
 table tr td.col {
     width: 50%;
 }
+table tr td.col table tr th.merge {
+    min-height: 100px;
+}
 
 /*contents*/
 .container .contents {
@@ -108,7 +111,7 @@ table tbody tr th {
     border-right: 1px solid #000;
 }
 /* 기부 내용 영역 */
-.list table thead > tr,
+/* .list table thead > tr,
 .list table tbody > tr {
     gap: 4px;
 }
@@ -136,13 +139,52 @@ table tbody tr th {
 }
 .test .block table thead tr th {
     width: 25%;
-}
+} */
 .infor {
     font-size: 20px;
     text-align: center;
 }
 .space {
     width: 60px;
+}
+.font-small {
+    font-size: 18px;
+}
+/* 기부 내용 */
+section.list {
+    position: relative;
+}
+section.list .items {
+    position: absolute;
+    top: 90px;
+    display: flex;
+    width: 48%;
+    font-size: 22px;
+}
+section.list .items .item {
+    display: flex;
+    align-items: center;
+    height: 32px;
+}
+section.list .items .item span {
+    display: inline;
+    text-align: center;
+}
+section.list .items .item span.code {
+    width: 166px;
+}
+section.list .items .item span.date,
+section.list .items .item span.remittance {
+    width: 138px;
+}
+section.list .items .item span.summary {
+    width: 124px;
+}
+section.list .amount {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    font-size: 22px;
 }
 @media only screen and (max-width: 1200px) {
     .head {
@@ -185,9 +227,33 @@ table tbody tr th {
         left: 7.5vw;
         font-size: 1.5vw;
     }
+    section.list .items {
+        top: 12.3%;
+        font-size: 1.5vw;
+    }
+    section.list .items .item {
+        height: 2.25vw;
+    }
+    section.list .items .item span.code {
+        width: 12vw;
+    }
+    section.list .items .item span.date,
+    section.list .items .item span.remittance {
+        width: 10.5vw;
+    }
+    section.list .items .item span.summary {
+        width: 8.3333vw;
+    }
+    section.list .amount {
+        bottom: 1.3vw;
+        font-size: 1.5vw;
+    }
 }
 @media only screen and (max-width: 760px) {
     .container .contents section.sign .date {
         left: 10.25vw;
+    }
+    section.list .amount {
+        bottom: 1.6vw;
     }
 }
